@@ -1,0 +1,27 @@
+<label> Имя (обязательно)
+    [text* your-name autocomplete:name] </label>
+
+<label> Телефон (обязательно)
+    [tel* your-phone autocomplete:tel] </label>
+
+<label> Email (обязательно)
+    [email* your-email autocomplete:email] </label>
+
+[energomax_product_name product_name]
+
+[energomax_nonce]
+
+<label> Комментарий
+    [textarea your-message] </label>
+
+[submit "Отправить заявку"]
+
+<!-- Mail tab (CF7 admin):
+To: sales@energomaxgroup.com
+From: [your-name] <[your-email]>
+Subject: [Energomax] Заявка от [your-name]
+-->
+
+<!-- Messages tab:
+mail_sent_ok: Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.
+-->

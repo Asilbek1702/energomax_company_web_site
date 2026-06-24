@@ -1,0 +1,49 @@
+{
+    "key": "group_energomax_project_case",
+    "title": "Project Case",
+    "fields": [
+        {
+            "key": "field_em_client_name",
+            "label": "Client Name",
+            "name": "client_name",
+            "type": "text"
+        },
+        {
+            "key": "field_em_object_name",
+            "label": "Object Name",
+            "name": "object_name",
+            "type": "text"
+        },
+        {
+            "key": "field_em_supply_power",
+            "label": "Supply Power",
+            "name": "supply_power",
+            "type": "text"
+        },
+        {
+            "key": "field_em_supply_year",
+            "label": "Supply Year",
+            "name": "supply_year",
+            "type": "number"
+        },
+        {
+            "key": "field_em_country",
+            "label": "Country",
+            "name": "country",
+            "type": "text"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "energomax_project"
+            }
+        ]
+    ],
+    "menu_order": 4,
+    "position": "normal",
+    "style": "default",
+    "active": true
+}

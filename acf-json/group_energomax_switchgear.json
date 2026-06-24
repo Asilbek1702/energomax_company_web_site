@@ -1,0 +1,52 @@
+{
+    "key": "group_energomax_switchgear",
+    "title": "Switchgear",
+    "fields": [
+        {
+            "key": "field_em_panel_type",
+            "label": "Panel Type",
+            "name": "panel_type",
+            "type": "text",
+            "placeholder": "ЩО-70 / ГРЩ / ВРУ / АВР"
+        },
+        {
+            "key": "field_em_sections_count",
+            "label": "Sections Count",
+            "name": "sections_count",
+            "type": "number"
+        },
+        {
+            "key": "field_em_rated_current",
+            "label": "Rated Current",
+            "name": "rated_current",
+            "type": "number"
+        },
+        {
+            "key": "field_em_switchgear_price_range",
+            "label": "Price Range",
+            "name": "price_range",
+            "type": "text"
+        },
+        {
+            "key": "field_em_switchgear_datasheet_pdf",
+            "label": "Datasheet PDF",
+            "name": "datasheet_pdf",
+            "type": "file",
+            "return_format": "array",
+            "mime_types": "pdf"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "product_category:switchgear"
+            }
+        ]
+    ],
+    "menu_order": 2,
+    "position": "normal",
+    "style": "default",
+    "active": true
+}

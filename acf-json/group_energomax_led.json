@@ -1,0 +1,74 @@
+{
+    "key": "group_energomax_led",
+    "title": "LED Lighting",
+    "fields": [
+        {
+            "key": "field_em_power_watt",
+            "label": "Power (W)",
+            "name": "power_watt",
+            "type": "number"
+        },
+        {
+            "key": "field_em_lumens",
+            "label": "Lumens",
+            "name": "lumens",
+            "type": "number"
+        },
+        {
+            "key": "field_em_led_protection_ip",
+            "label": "Protection IP",
+            "name": "protection_ip",
+            "type": "text"
+        },
+        {
+            "key": "field_em_color_temp_k",
+            "label": "Color Temp (K)",
+            "name": "color_temp_k",
+            "type": "number"
+        },
+        {
+            "key": "field_em_lifespan_hours",
+            "label": "Lifespan (hours)",
+            "name": "lifespan_hours",
+            "type": "number"
+        },
+        {
+            "key": "field_em_price_from",
+            "label": "Price From",
+            "name": "price_from",
+            "type": "number"
+        },
+        {
+            "key": "field_em_currency",
+            "label": "Currency",
+            "name": "currency",
+            "type": "select",
+            "choices": {
+                "UZS": "UZS",
+                "USD": "USD"
+            },
+            "return_format": "value"
+        },
+        {
+            "key": "field_em_led_datasheet_pdf",
+            "label": "Datasheet PDF",
+            "name": "datasheet_pdf",
+            "type": "file",
+            "return_format": "array",
+            "mime_types": "pdf"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "product_category:led"
+            }
+        ]
+    ],
+    "menu_order": 3,
+    "position": "normal",
+    "style": "default",
+    "active": true
+}

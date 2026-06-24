@@ -1,0 +1,72 @@
+{
+    "key": "group_energomax_transformer",
+    "title": "Transformer",
+    "fields": [
+        {
+            "key": "field_em_voltage_class",
+            "label": "Voltage Class",
+            "name": "voltage_class",
+            "type": "text",
+            "instructions": "e.g. 10 кВ"
+        },
+        {
+            "key": "field_em_power_kva",
+            "label": "Power (kVA)",
+            "name": "power_kva",
+            "type": "number"
+        },
+        {
+            "key": "field_em_cooling_type",
+            "label": "Cooling Type",
+            "name": "cooling_type",
+            "type": "select",
+            "choices": {
+                "масляный": "масляный",
+                "сухой": "сухой"
+            },
+            "return_format": "value"
+        },
+        {
+            "key": "field_em_protection_ip",
+            "label": "Protection IP",
+            "name": "protection_ip",
+            "type": "text"
+        },
+        {
+            "key": "field_em_climate_version",
+            "label": "Climate Version",
+            "name": "climate_version",
+            "type": "text"
+        },
+        {
+            "key": "field_em_price_range",
+            "label": "Price Range",
+            "name": "price_range",
+            "type": "text",
+            "placeholder": "По запросу"
+        },
+        {
+            "key": "field_em_datasheet_pdf",
+            "label": "Datasheet PDF",
+            "name": "datasheet_pdf",
+            "type": "file",
+            "return_format": "array",
+            "mime_types": "pdf"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_taxonomy",
+                "operator": "==",
+                "value": "product_category:transformers"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "active": true
+}
